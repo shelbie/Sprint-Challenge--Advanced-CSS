@@ -76,6 +76,7 @@
       padding: 5%;
       flex-direction: column-reverse;
       margin-top: 20px;
+      align-items: center;
     }
 
     .walk-text {
@@ -114,22 +115,25 @@
           .box(100%,5%);
         }
       }
-
+  }
     .walk-img {
       width: 46%;
       margin-left: 4%;
 
       @media @phone {
         width: 100%;
-        margin: 0 auto;
       }
       
       img {
         width: 100%;
-        height: auto;
         border-radius: 10px;
+
+        @media @phone {
+          width: 100%;
+          border-radius: 10%;
+        }
       }
     }
   }
-}}
+}
 // home

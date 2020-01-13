@@ -1,12 +1,19 @@
 // Navigation code here
-
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+   height: 100px;
+   width: 100%;
+   overflow: hidden;
+    background-color: rgba(35, 41, 59, 0.19);
+}
 .navbar {
     align-items: center;
     flex-wrap: wrap;
     .displayFlex(column,100%);
-    // position: fixed;
-    // top: 0;
-    // margin-top: 0 auto;
+
 
     
     nav{
@@ -23,6 +30,7 @@
             justify-content: space-between;
             text-decoration: none;
             font-size: 1.6rem;
+            color: @main-font-color;
 
         }
         
