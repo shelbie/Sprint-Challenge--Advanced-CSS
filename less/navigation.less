@@ -1,1 +1,37 @@
 // Navigation code here
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+   height: 100px;
+   width: 100%;
+   overflow: hidden;
+    background-color: rgba(35, 41, 59, 0.19);
+}
+.navbar {
+    align-items: center;
+    flex-wrap: wrap;
+    .displayFlex(column,100%);
+
+
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        .box(25%,1% 0);
+
+        @media @phone {
+            justify-content: space-around;
+            .box(100%,2%);
+        }
+ 
+        a {
+            justify-content: space-between;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @main-font-color;
+
+        }
+        
+}}
